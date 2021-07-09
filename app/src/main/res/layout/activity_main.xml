@@ -7,35 +7,7 @@
     android:background="#F8EEE2"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btn7"
-        style="@style/Widget.AppCompat.Button.Borderless.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:layout_marginEnd="8dp"
-        android:minWidth="75dp"
-        android:text="7"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#000000"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btn8"
-        app:layout_constraintEnd_toStartOf="@+id/btn8" />
-
-    <Button
-        android:id="@+id/btn8"
-        style="@style/Widget.AppCompat.Button.Borderless.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:layout_marginEnd="8dp"
-        android:minWidth="75dp"
-        android:text="8"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#000000"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btn9"
-        app:layout_constraintEnd_toStartOf="@+id/btn9" />
+    <!-- TODO: can't remember -->
 
     <Button
         android:id="@+id/btn9"
@@ -53,34 +25,35 @@
         app:layout_constraintEnd_toStartOf="@+id/btnDivide" />
 
     <Button
-        android:id="@+id/btnDivide"
+        android:id="@+id/btnMinus"
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
         android:layout_marginBottom="4dp"
         android:minWidth="75dp"
-        android:text="/"
+        android:text="-"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#000000"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btnMultiply"
-        app:layout_constraintEnd_toEndOf="@+id/btnMultiply" />
+        app:layout_constraintBottom_toTopOf="@+id/btnPlus"
+        app:layout_constraintEnd_toEndOf="@+id/btnPlus" />
 
     <Button
-        android:id="@+id/btn4"
+        android:id="@+id/btnPlus"
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="76dp"
         android:minWidth="75dp"
-        android:text="4"
+        android:text="+"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#000000"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btn5"
-        app:layout_constraintEnd_toStartOf="@+id/btn5" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/current" />
 
     <Button
         android:id="@+id/btn5"
@@ -98,65 +71,19 @@
         app:layout_constraintEnd_toStartOf="@+id/btn6" />
 
     <Button
-        android:id="@+id/btn6"
+        android:id="@+id/btn3"
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
         android:layout_marginEnd="8dp"
         android:minWidth="75dp"
-        android:text="6"
+        android:text="3"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#000000"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btnMultiply"
-        app:layout_constraintEnd_toStartOf="@+id/btnMultiply" />
-
-    <Button
-        android:id="@+id/btnMultiply"
-        style="@style/Widget.AppCompat.Button.Borderless.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:layout_marginBottom="4dp"
-        android:minWidth="75dp"
-        android:text="*"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#000000"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btnMinus"
-        app:layout_constraintEnd_toEndOf="@+id/btnMinus" />
-
-    <Button
-        android:id="@+id/btnMinus"
-        style="@style/Widget.AppCompat.Button.Borderless.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:layout_marginBottom="8dp"
-        android:minWidth="75dp"
-        android:text="-"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#000000"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btnPlus"
-        app:layout_constraintEnd_toEndOf="@+id/btnPlus" />
-
-    <Button
-        android:id="@+id/btnPlus"
-        style="@style/Widget.AppCompat.Button.Borderless.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginBottom="16dp"
-        android:minWidth="75dp"
-        android:text="+"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#000000"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/current" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnMinus"
+        app:layout_constraintEnd_toStartOf="@+id/btnMinus" />
 
     <Button
         android:id="@+id/btnEqual"
@@ -174,19 +101,64 @@
         app:layout_constraintEnd_toStartOf="@+id/btnPlus" />
 
     <Button
-        android:id="@+id/btnPoint"
+        android:id="@+id/btn8"
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
         android:layout_marginEnd="8dp"
         android:minWidth="75dp"
-        android:text="."
+        android:text="8"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#000000"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btnEqual"
-        app:layout_constraintEnd_toStartOf="@+id/btnEqual" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn9"
+        app:layout_constraintEnd_toStartOf="@+id/btn9" />
+
+    <Button
+        android:id="@+id/btn4"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
+        android:minWidth="75dp"
+        android:text="4"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn5"
+        app:layout_constraintEnd_toStartOf="@+id/btn5" />
+
+    <Button
+        android:id="@+id/btn1"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
+        android:minWidth="75dp"
+        android:text="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn2"
+        app:layout_constraintEnd_toStartOf="@+id/btn2" />
+
+    <Button
+        android:id="@+id/btn7"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
+        android:minWidth="75dp"
+        android:text="7"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn8"
+        app:layout_constraintEnd_toStartOf="@+id/btn8" />
 
     <Button
         android:id="@+id/btn0"
@@ -204,19 +176,34 @@
         app:layout_constraintEnd_toStartOf="@+id/btnPoint" />
 
     <Button
-        android:id="@+id/btn3"
+        android:id="@+id/btnPoint"
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
         android:layout_marginEnd="8dp"
         android:minWidth="75dp"
-        android:text="3"
+        android:text="."
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#000000"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btnMinus"
-        app:layout_constraintEnd_toStartOf="@+id/btnMinus" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnEqual"
+        app:layout_constraintEnd_toStartOf="@+id/btnEqual" />
+
+    <Button
+        android:id="@+id/btnMultiply"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:minWidth="75dp"
+        android:text="*"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnMinus"
+        app:layout_constraintEnd_toEndOf="@+id/btnMinus" />
 
     <Button
         android:id="@+id/btn2"
@@ -234,29 +221,44 @@
         app:layout_constraintEnd_toStartOf="@+id/btn3" />
 
     <Button
-        android:id="@+id/btn1"
+        android:id="@+id/btn6"
         style="@style/Widget.AppCompat.Button.Borderless.Colored"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
         android:layout_marginEnd="8dp"
         android:minWidth="75dp"
-        android:text="1"
+        android:text="6"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#000000"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btn2"
-        app:layout_constraintEnd_toStartOf="@+id/btn2" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnMultiply"
+        app:layout_constraintEnd_toStartOf="@+id/btnMultiply" />
+
+    <Button
+        android:id="@+id/btnDivide"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:minWidth="75dp"
+        android:text="/"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnMultiply"
+        app:layout_constraintEnd_toEndOf="@+id/btnMultiply" />
 
     <EditText
         android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="30dp"
         android:ems="10"
         android:focusable="false"
         android:focusableInTouchMode="false"
-        android:inputType="numberSigned"
+        android:inputType="numberSigned|numberDecimal"
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -266,15 +268,15 @@
         android:id="@+id/current"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:ems="10"
         android:focusable="false"
         android:focusableInTouchMode="false"
-        android:inputType="numberSigned"
-        android:text="12.0"
+        android:inputType="numberSigned|numberDecimal"
+        android:scrollbars="horizontal"
         android:textAlignment="textEnd"
         android:textColor="#000000"
-        android:textSize="60sp"
+        android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/result" />
@@ -285,11 +287,37 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:text="+"
         android:textColor="#555555"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBaseline_toBaselineOf="@+id/current"
         app:layout_constraintEnd_toStartOf="@+id/current"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/clear"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"
+        android:paddingEnd="20sp"
+        android:paddingRight="20sp"
+        android:text="   clear   "
+        android:textColor="#000000"
+        app:layout_constraintBaseline_toBaselineOf="@+id/backspace"
+        app:layout_constraintStart_toStartOf="@+id/btn0" />
+
+    <Button
+        android:id="@+id/backspace"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:text="Backspace"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/btnPlus"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlus" />
 </androidx.constraintlayout.widget.ConstraintLayout>

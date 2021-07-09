@@ -240,7 +240,7 @@
         android:ems="10"
         android:focusable="false"
         android:focusableInTouchMode="false"
-        android:inputType="numberSigned"
+        android:inputType="numberSigned|numberDecimal"
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.05"
@@ -257,7 +257,7 @@
         android:ems="10"
         android:focusable="false"
         android:focusableInTouchMode="false"
-        android:inputType="numberSigned"
+        android:inputType="numberSigned|numberDecimal"
         android:text="12.0"
         android:textAlignment="textEnd"
         android:textColor="#000000"
@@ -280,4 +280,26 @@
         app:layout_constraintEnd_toStartOf="@+id/result"
         app:layout_constraintHorizontal_bias="0.16"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="   clear   "
+        android:textColor="#000000"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn0"
+        app:layout_constraintStart_toStartOf="@+id/current" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="backspace"
+        android:textColor="#000000"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn0"
+        app:layout_constraintEnd_toEndOf="@+id/current" />
 </androidx.constraintlayout.widget.ConstraintLayout>
